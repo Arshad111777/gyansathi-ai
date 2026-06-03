@@ -213,7 +213,7 @@ hr {
 }
 
 [data-testid="stChatInput"] textarea {
-    background: transparent !important;
+    background: #2f2f2f !important;
     color: #ececec !important;
     font-size: 0.95rem !important;
 }
@@ -277,6 +277,17 @@ hr {
 .st-emotion-cache-hzygls{
     background: unset !important;
 }
+
+/* Custom Styling issues fixing */
+.st-emotion-cache-128upt6.eqt0gmo3 {
+    background: transparent!important;
+}
+
+.st-emotion-cache-6mn6c9{
+    background: #2f2f2f !important;
+}
+
+
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
