@@ -4,4 +4,4 @@ __pycache__/
 chat_history.json
 .streamlit/secrets.toml
 chroma_db/
-pdfs/
+# pdfs/
