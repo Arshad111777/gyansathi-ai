@@ -213,7 +213,7 @@ hr {
 }
 
 [data-testid="stChatInput"] textarea {
-    background: #2f2f2f !important;
+    background: transparent !important;
     color: #ececec !important;
     font-size: 0.95rem !important;
 }
@@ -279,6 +279,7 @@ hr {
 }
 
 /* Custom Styling issues fixing */
+
 .st-emotion-cache-128upt6.eqt0gmo3 {
     background: transparent!important;
 }
@@ -287,6 +288,11 @@ hr {
     background: #2f2f2f !important;
 }
 
+[data-testid="stChatMessage"] h2 {
+    margin-top: 0!important;
+    padding-top: 0!important;
+    font-size: 2rem!important;
+}
 
 
 /* Scrollbar */
@@ -490,7 +496,7 @@ else:
     query = None
 
 # ─── Chat Input ───────────────────────────────────────────
-placeholder = "Quiz ka answer do..." if quiz_mode else "Poocho — theory, repeat questions, important topics..."
+placeholder = "Quiz ka answer do..." if quiz_mode else "Ask — theory, repeat questions, important topics..."
 user_input = st.chat_input(placeholder)
 
 if user_input:
@@ -514,7 +520,7 @@ if query:
         # Book se theory
         book_results = db.similarity_search(query, k=3, filter={"type": "book"})
         book_context = "\n".join([r.page_content for r in book_results])
-
+        
         # PYQ se related questions
         pyq_results = db.similarity_search(query, k=4, filter={"type": "pyq"})
         pyq_context = "\n".join([r.page_content for r in pyq_results])
