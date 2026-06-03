@@ -1,8 +1,17 @@
+# streamlit
+# langchain
+# langchain-community
+# langchain-text-splitters
+# chromadb
+# sentence-transformers
+# groq
+# pypdf
+
 streamlit
 langchain
 langchain-community
 langchain-text-splitters
-chromadb
+faiss-cpu
 sentence-transformers
 groq
 pypdf

@@ -4,7 +4,8 @@ import time
 import json
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import Chroma
+# from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from groq import Groq
 
@@ -365,7 +366,8 @@ def load_db():
         all_chunks.extend(chunks)
 
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-    db = Chroma.from_documents(all_chunks, embeddings)
+    # db = Chroma.from_documents(all_chunks, embeddings)
+    db = FAISS.from_documents(all_chunks, embeddings)
     return db
 
 with st.spinner("⏳ Knowledge base load ho rahi hai..."):
