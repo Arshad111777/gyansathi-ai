@@ -117,6 +117,30 @@ hr { border: none !important; border-top: 1px solid #1e1e1e !important; margin: 
 
 /* Custom Styling */
 
+.st-emotion-cache-jchovf:focus-within{
+    border:none !important;
+}
+
+.st-emotion-cache-jchovf{
+    border: none !important;
+}
+
+.st-emotion-cache-6mn6c9 {
+    background: rgb(38, 39, 48);
+}
+
+[data-testid="stChatInput"] textarea {
+    background: rgb(38, 39, 48)!important;
+}
+
+._profileContainer_gzau3_53 {
+    display: none;
+}
+
+.st-emotion-cache-128upt6 {
+    background: transparent!important;
+}
+
 .st-emotion-cache-scp8yw{
     display: none !important;
 }
