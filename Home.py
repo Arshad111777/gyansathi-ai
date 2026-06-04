@@ -130,11 +130,11 @@ hr { border: none !important; border-top: 1px solid #1e1e1e !important; margin: 
 }
 
 [data-testid="stChatInput"] textarea {
-    background: rgb(38, 39, 48)!important;
+    background: rgb(38, 39, 48) !important;
 }
 
 ._profileContainer_gzau3_53 {
-    display: none;
+    display: none !important;
 }
 
 .st-emotion-cache-128upt6 {
