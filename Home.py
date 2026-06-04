@@ -39,7 +39,7 @@ section.stMain.st-emotion-cache-4rsbii.eqt0gmo1 {
 
 /* SIDEBAR */
 
-[data-testid="stSidebarContent"] { padding: 0 !important; }
+[data-testid="stSidebarContent"] { padding: 0 !important; background: #0f0f0f !important; border-right: 1px solid #242424 !important; }
 [data-testid="stSidebar"] .stButton > button {
     background: transparent !important; border: none !important; color: #888 !important;
     font-size: 0.8rem !important; text-align: left !important; padding: 0.45rem 0.7rem !important;
